@@ -1,0 +1,583 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700;800&display=swap');
+
+
+:root{
+    --font-family: 'Merriweather Sans', sans-serif;;
+    --font-style: ;
+    --bg-color: #ffff;   
+    --text-color: rgb(0, 0, 80);
+    --main-color: rgb(255, 176, 29);
+}
+
+*{
+    font-family: var(--font-family);
+    font-style: var(--font-style);
+    color: var(--text-color);
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width: 0.5rem;
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    border-radius: 5rem;
+    background: var(--text-color);
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+}
+
+section{
+    padding: 4rem 0 3rem;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    background: var(--bg-color);
+    top: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: 4px 4px 10px rgb(0, 0, 0, 0.15);
+}
+
+a.logo img{
+    width: 7.5rem;
+    height: 7.5rem;
+    top: 0;
+    margin: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    max-height: 5rem;
+}
+nav{
+    display: flex;
+    column-gap: 1.9rem;
+    align-items: center;
+    padding: 5px 11px;
+}
+li{
+    list-style: none;
+}
+nav a{
+    position: relative;
+    font-size: 1.12rem;
+    font-weight: 600;
+    color: var(--text-color);
+    text-decoration: none;
+    list-style: none;
+}
+nav a:hover{
+    color: var(--main-color);
+    transition: 0.3s all linear;
+}
+
+#menu{
+    display: none;
+}
+#menu-icon{
+    display: none;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.donate{
+    font-size: 0.995rem;
+    font-weight: 500;
+    padding: 8px 24px;
+    border: 1px solid var(--text-color);
+    border-radius: 4px;
+    text-decoration: none;
+}
+.donate:hover{
+    background: var(--text-color);
+    color: var(--main-color);
+    transition: 0.3s all linear;
+}
+.welcome{
+    background: url(img/african-children-standing-head-head.jpg);
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    object-fit: cover;
+}
+.welcome-pg{
+    margin-top: 18rem;
+}
+.welcome-content{
+    margin-bottom: 8.5rem;
+    text-align: center;
+}
+.welcome-content h2{
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: white;
+}
+
+.welcome-content p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+}
+
+.donate-now{
+    font-size: 0.995rem;
+    font-weight: 500;
+    padding: 8px 24px;
+    border: 1px solid var(--main-color);
+    border-radius: 4px;
+    text-decoration: none;
+    color: var(--main-color);
+}
+.donate-now:hover{
+    background: white;
+    color: var(--text-color);
+    transition: 0.3s all linear;
+}
+.part1{
+    background: var(--main-color);
+    background: url(img/15694222_5599047.jpg);
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+.row .column{
+    flex: 1 1 10rem ;
+}
+.box{
+    max-width: 250px;
+}
+.icon span{
+    font-size: 1.95rem;
+    padding: 8px 8px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.icon i{
+    font-size: 1.95rem;
+    color: white;
+    padding: 8px 8px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.icon i:hover{
+    background: white;
+    color: var(--text-color);
+    transition: 0.4s all linear;
+    border-radius: 50%;
+}
+.icon span:hover{
+    background: white;
+    color: var(--text-color);
+    transition: 0.4s all linear;
+    border-radius: 50%;
+}
+h3{
+    font-size: 1.25rem;
+    color: var(--text-color);
+}
+.box .part-cont {
+    font-size: 0.985rem;
+    color: var(--text-color);
+}
+
+.who-we-are{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.rows{
+    width: 80%;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px 30px;
+}
+.rows .columns-left{
+    overflow: hidden;
+}
+
+.rows .columns-left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rows .columns-right {
+
+    align-items: center;
+}
+
+.rows .columns-right h2
+.rows .columns-right p{
+    padding-left: 20px;
+}
+.rows .columns-right h2{
+    font-size: 1.325rem;
+    color: var(--main-color);
+}
+.rows .columns-right p{
+    font-size: 0.895rem;
+    line-height: 20px;
+    text-align: justify;
+}
+
+h2 span{
+    color: var(--main-color);
+}
+
+@media (max-widht: 991px) {
+    .rows .columns-right h2
+    .rows .columns-right p{
+    padding-left: 0px;
+}
+}
+@media (max-width: 768px) {
+    .rows{
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+}
+
+.join{
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.row1{
+    width: 80%;
+    max-width: 1128px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:2rem;
+    align-items: center;
+}
+
+.row1 .column-right-1{
+    overflow: hidden;
+}
+
+.row1 .column-right-1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.row1 .column-left-1{
+    align-items: center;
+}
+.column-left-content{
+    max-width: 450px;
+    row-gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.start-donating{
+    background-image: url(img/community-concept-with-nature.png);
+    object-fit: cover;
+    background-position: center;
+
+}
+.donate-content{
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.head1{
+    font-size: 1.5rem;
+    color: var(--bg-color);
+}
+
+.body-head{
+    font-size: 2.5rem;
+    color: var(--main-color);
+}
+.start-donating-btn{
+    color: white;
+    background: orange;
+    padding: 13px 21px;
+    box-sizing: border-box;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1.235rem;
+}
+.start-donating-btn:hover{
+    background: var(--bg-color);
+    color: var(--main-color);
+    transition: 0.3s all ease-in-out;
+}
+
+p.head{
+    font-size: 1.189rem;
+}
+
+p.body-p{
+    margin-bottom: 2rem;
+}
+.volun{
+    font-size: 2.5rem;
+    color: var(--main-color);
+}
+
+.join-us{
+    font-size: 0.895;
+    color: var(--main-color);
+    background: var(--text-color);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.join-us:hover{
+    background: var(--main-color);
+    color: var(--text-color);
+    transition: 0.3s all linear;
+}
+
+footer{
+    background: var(--text-color);
+    padding: 70px 0;
+
+}
+
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-evenly;
+    margin-left: 50px;
+}
+
+.footer-col{
+    width: 20%;
+    padding: 0;
+}
+
+.footer-col h3{
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 25px;
+    font-weight: 700;
+    position: relative;
+}
+.list-donate li a {
+    padding: 10px 15px;
+    background: var(--bg-color);
+    border-radius: 10px;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+.list-donate li a:hover{
+    background: transparent;
+    border: 3px solid var(--main-color);
+    color: var(--bg-color);
+}
+.footer-col h4{
+    font-size: 18px;
+    color: white;
+    margin-bottom: 25px;
+    font-weight: 700;
+    position: relative;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background: var(--main-color);
+    height: 2px;
+    box-sizing: border-box;
+    width: 40px;
+    border-radius: 10px;
+}
+
+.footer-col .list{
+    list-style: none;
+}
+
+.footer-col .list a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: var(--main-color);
+    display: block;
+    transition: all .5s ease;
+    padding-bottom: 8px;
+}
+
+.footer-col .list a:hover{
+    color: var(--bg-color);
+    padding-left: 10px;
+}
+
+.footer-col .social-link a i{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background: rgba(255, 255, 255, .2);
+    margin: 0 10px 10 0px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.29rem;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-link a i:hover{
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+
+@media(max-width:767px){
+    .footer-col{
+        width: 40%;
+        margin-bottom: 30px;
+    }
+    .footer-row{
+        margin-left: 20px;
+    }
+   
+}
+
+@media(max-width:567px){
+    .footer-col{
+        width: 100%;
+        
+    }
+    .footer-row{
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 1280px){
+    .container{
+        max-width: 100%;
+        margin-left: 1.2rem;
+        margin-right: 1.2rem;
+    }
+
+}
+
+@media (max-width: 1360px) {
+    .container{
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width:991px){
+    .navbar{
+        padding: 15px 20px;
+    }
+    section{
+        padding: 3rem 0 1rem;
+    }
+    .welcome{
+        background: url(img/close-up-view-person-washing-hands.jpg);
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        object-fit: contain;
+    }
+
+}
+@media (max-width:1232px){
+    .navbar{
+        
+        justify-content: space-between;
+    }
+    #menu-icon{
+        display: initial;
+    }
+    nav{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction:column;
+        row-gap: 0.5rem;
+        background: var(--bg-color);
+        align-items: end;
+        padding-right: 40px;
+        box-shadow: 4px 4px 20px rgb(15 54 55 / 20%);
+        clip-path: circle(0% at 50% 0%);
+        transition: 0.7s;
+    }
+    nav a{
+        display: block;
+        padding: 15px;
+    }
+    nav a:hover{
+        background: var(--text-color);
+    }
+     #menu:checked ~ nav{
+        clip-path: circle(144% at 50% 0%);
+    }
+    .donate-btn{
+        font-size: 0.975rem;
+        font-weight: 500;
+        padding-bottom: 20px;
+        margin-left: 0;
+    }
+
+    .register-btn:hover{
+        background: var(--text-color);
+        color: var(--bg-color);
+    }
+    .btn{
+        padding: 5px 12px;
+        border-radius: 0.2rem;
+        font-family: var(--poppins-font);
+        transition: 0.3s all linear;
+    }
+
+}
+
+.donation-wel{
+    background: url(img/annie-spratt-cVEOh_JJmEE-unsplash.jpg);
+    background-position: center;
+    object-fit: cover;
+}
+hr{
+    color: var(--bg-color);
+    margin-top: 2.5rem;
+}
+.copyright{
+   
+    align-items: center;
+   text-align: center;
+    width: 100%;
+}
+.copyright-cont p{
+    font-size: 1.2rem;
+    color: var(--bg-color);
+}

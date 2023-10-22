@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700;800&display=swap');
+
+
+:root{
+    --font-family: 'Merriweather Sans', sans-serif;;
+    --font-style: ;
+    --bg-color: #ffff;   
+    --text-color: rgb(0, 0, 80);
+    --main-color: rgb(255, 166, 0);
+}
+
+*{
+    font-family: var(--font-family);
+    font-style: var(--font-style);
+    color: var(--text-color);
+    scroll-behavior: smooth;
+}
+
+.vl {
+    border-left: 3px solid var(--main-color);
+    height: 30px;
+    position: relative;
+    top: 0;
+}
+
+.wel-title{
+    color: var(--bg-color);
+    font-size: 2.5rem;
+    padding: 10px 18px;
+}
+
+.wel-contents{
+    place-items: center;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    text-align: center;
+}
+
+.wel-link-pg{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+
+.pg-link{
+    color: var(--main-color);
+    font-size: 1.35rem;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.pg-link:hover{
+    color: var(--bg-color);
+}
+
+.pg{
+    color: var(--bg-color);
+    font-size: 1.15rem;
+    
+}
+
+.get-row{
+    align-items: start;
+    width: 80%;
+    gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 20px;
+}
+.get-row .get-col{
+   flex: 1 1 21rem;
+}
+
+.get-imgs{
+    display: flex;
+
+    gap: 2.5rem;
+}
+
+.get-imgs .img-1{
+    flex: 1 1 21rem;
+}
+
+.get-imgs .img-1 img{
+    width: 200px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px rgb(0, 0, 0, 0.5);
+}
+@media(max-width:1290px){
+    .get-imgs{
+        display: flex;
+        width: 200px;
+        gap: 1.5rem;        
+    }
+    form{
+        margin-left: 1.133rem;
+    }
+}
+@media(max-width:883px){
+    .get-imgs .img-1 img{
+        width: 175px;
+        height: 115px;
+    }
+    form{
+        margin-left: 0;
+    }
+}
+@media(max-width:590px){
+    .get-imgs .img-1 img{
+        width: 100px;
+        height: 75px;
+    }
+}
+.get-cont{
+    text-align: justify;
+    max-width: 450px;
+}
+
+form, select{
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    padding: 10px 21px;
+    height: 35px;
+    border-radius: 4px;
+}
+
+select{
+    padding: 10px 21px;
+    height: 45px;
+    border-radius: 4px;
+    background: transparent;
+}
+
+input[type="submit"]{
+    width: 120px;
+    cursor: pointer;
+    color: var(--bg-color);
+    background: var(--main-color);
+}
+input[type="submit"]:hover{
+    transition: all 0.5s ease;
+    color: var(--main-color);
+    background: var(--bg-color);
+    border: 3px solid var(--main-color);
+}
+textarea{
+    padding: 10px 21px;
+    border-radius: 4px;
+}
+@media(max-width:431px){
+    input, select, textarea{
+        width: 100%;
+    }
+}

@@ -1,0 +1,80 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700;800&display=swap');
+
+
+:root{
+    --font-family: 'Merriweather Sans', sans-serif;;
+    --font-style: ;
+    --bg-color: #ffff;   
+    --text-color: rgb(0, 0, 80);
+    --main-color: rgb(255, 166, 0);
+}
+
+*{
+    font-family: var(--font-family);
+    font-style: var(--font-style);
+    color: var(--text-color);
+    scroll-behavior: smooth;
+}
+
+.vl {
+    border-left: 3px solid var(--main-color);
+    height: 30px;
+    position: relative;
+    top: 0;
+}
+
+.wel-title{
+    color: var(--bg-color);
+    font-size: 2.5rem;
+    padding: 10px 18px;
+}
+
+.wel-contents{
+    place-items: center;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    text-align: center;
+}
+
+.wel-link-pg{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+
+.pg-link{
+    color: var(--main-color);
+    font-size: 1.35rem;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.pg-link:hover{
+    color: var(--bg-color);
+}
+
+.pg{
+    color: var(--bg-color);
+    font-size: 1.15rem;
+    
+}
+
+a.apply-btn{
+    color: var(--bg-color);
+    background: var(--main-color);
+    font-size: 1.125rem;
+    margin-top: 1rem;
+    padding: 10px 21px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a.apply-btn:hover{
+    color: var(--main-color);
+    background: transparent;
+    border: 1px solid var(--main-color);
+    transition: 0.3s all linear;
+}
