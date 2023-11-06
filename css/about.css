@@ -102,7 +102,7 @@ p.about-cont{
 }
 
 .about-col:hover{
-    background: var(--text-color);
+    
     transition: all 0.5s ease;
     padding: 17px 32px;
 }
@@ -133,5 +133,9 @@ hr.lin{
 
 .mission-statement p{
     color: var(--bg-color);
+    font-size: 1.285rem;
+}
+
+p.explore{
     font-size: 0.985rem;
 }
