@@ -106,7 +106,9 @@ nav a:hover{
     max-width: 100%;
     margin-left: 0;
     margin-right: 0;
-    object-fit: cover;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
 }
 .welcome-pg{
     margin-top: 18rem;
@@ -500,13 +502,15 @@ footer{
     section{
         padding: 3rem 0 1rem;
     }
-    .welcome{
-        background: url(img/close-up-view-person-washing-hands.jpg);
+    /*.welcome{
         width: 100%;
         margin-left: 0;
         margin-right: 0;
-        object-fit: contain;
-    }
+        object-fit: fill;
+        -o-object-fit: fill;
+        object-position: center;
+        background-repeat: no-repeat;
+    }*/
 
 }
 @media (max-width:1232px){
